@@ -6,17 +6,17 @@ namespace ConsoleAppLearning
     {
         static void Main(string[] args)
         {
-            Human person;
-            person = new Human();
+            Human person = new Human();
             person.Name = "Ieva";
-            person.Surname = "Stripkāne";
+            person.Surname = "S";
             person.Age = 18;
             person.EyeColor = "Blue";
-
-            Console.WriteLine(person.Name + " " + person.Surname);
+            person.Introduce();
 
             person.Name = "Anna";
-            Console.WriteLine(person.Name + " " + person.Surname);
+            person.Introduce();
+
+            person.AddNumbers(12, 52);
         }
     
     }

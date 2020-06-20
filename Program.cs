@@ -30,6 +30,10 @@ namespace ConsoleAppLearning
               person.Introduce();
             }
 
+            //create some accounts here
+            List<BankAccount> accounts = new List<BankAccount>();
+            accounts.Add(new BankAccount());
+
 
         }
     

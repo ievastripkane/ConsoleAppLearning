@@ -13,7 +13,7 @@ namespace ConsoleAppLearning
             persons.Add(new Human("Miralda", "S", 68, "Brown"));
             persons.Add(new Human("Jolanta", "B", 44, "Green"));
 
-            persons[1].SetAge(15);
+            //persons[1].SetAge(15);
 
             //persons[0].Introduce();
             //persons[1].Introduce();
@@ -32,7 +32,13 @@ namespace ConsoleAppLearning
 
             //create some accounts here
             List<BankAccount> accounts = new List<BankAccount>();
-            accounts.Add(new BankAccount());
+            accounts.Add(new BankAccount("Ieva", 200, "Euro"));        
+            accounts[0].PrintInfo();
+            accounts.Add(new BankAccount("Ralfs", 5000, "Euro"));
+            accounts[1].PrintInfo();
+            accounts.Add(new BankAccount("Miralda", 3000, "Euro"));
+            accounts[2].PrintInfo();
+
 
 
         }

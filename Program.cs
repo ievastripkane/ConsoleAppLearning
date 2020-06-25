@@ -43,6 +43,14 @@ namespace ConsoleAppLearning
 
             accounts[0].MakeDeposit(100, "Birthday gift");
             accounts[0].MakeDeposit(400, "First salary");
+            accounts[0].MakeDeposit(50, "Bonus");
+            Console.WriteLine(accounts[0].Balance);
+            accounts[0].MakeWithdrawal(150, "Online course");
+            Console.WriteLine(accounts[0].Balance);
+
+            Console.WriteLine(accounts[1].Balance);
+            accounts[1].MakeDeposit(500, "First salary");
+            Console.WriteLine(accounts[1].Balance);
 
 
 

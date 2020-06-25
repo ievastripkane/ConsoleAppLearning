@@ -45,10 +45,21 @@ namespace ConsoleAppLearning
         {
             Transaction deposit = new Transaction(amount, note);
             transactions.Add(deposit);
+            if (amount < 0)
+            {
+                Console.WriteLine("Amount must be positive");
+                return;
+            }
         }
 
         public void MakeWithdrawal(decimal amount, string note)
         {
+
+            if(amount > this.Balance)
+            {
+                Console.WriteLine("You do not have sufficient funds");
+                return;
+            }
             Transaction withdrawal = new Transaction(-amount, note);
             transactions.Add(withdrawal);
         }

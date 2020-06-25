@@ -33,11 +33,18 @@ namespace ConsoleAppLearning
             //create some accounts here
             List<BankAccount> accounts = new List<BankAccount>();
             accounts.Add(new BankAccount("Ieva", 200, "Euro"));        
-            accounts[0].PrintInfo();
             accounts.Add(new BankAccount("Ralfs", 5000, "Euro"));
-            accounts[1].PrintInfo();
             accounts.Add(new BankAccount("Miralda", 3000, "Euro"));
-            accounts[2].PrintInfo();
+
+            foreach (var account in accounts)
+            {
+                account.PrintInfo();
+            }
+
+            accounts[0].MakeDeposit(100, "Birthday gift");
+            accounts[0].MakeDeposit(400, "First salary");
+
+
 
 
 
